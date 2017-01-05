@@ -1,8 +1,5 @@
 class SessionsController < ApplicationController
 
-  def new
-  end
-
   def create
     unless params[:name].blank?
       session[:name] = params[:name]
